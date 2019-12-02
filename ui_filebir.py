@@ -13,8 +13,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(510, 291)
-        MainWindow.setStyleSheet("background-color: rgb(246, 255, 237);")
+        MainWindow.resize(510, 316)
+        MainWindow.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
@@ -25,7 +25,18 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("")
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"         border: 2px solid #000000;\n"
+"         border-radius :8px;\n"
+"         color: #000000;\n"
+"         background-color: rgb(255, 170, 0);;\n"
+"         min-width: 80px;\n"
+"     }\n"
+"\n"
+"QPushButton:pressed {\n"
+"         background-color: rgb(255, 170, 0);;\n"
+"    \n"
+"}")
         self.pushButton.setObjectName("pushButton")
         self.re_but = QtWidgets.QPushButton(self.centralwidget)
         self.re_but.setGeometry(QtCore.QRect(261, 130, 161, 41))
@@ -35,37 +46,79 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.re_but.setFont(font)
-        self.re_but.setStyleSheet("")
+        self.re_but.setStyleSheet("QPushButton {\n"
+"         border: 1.5px solid #000000;\n"
+"         border-radius :8px;\n"
+"         color: #000000;\n"
+"         background-color: rgb(255, 170, 0);;\n"
+"         min-width: 80px;\n"
+"     }\n"
+"\n"
+"QPushButton:pressed {\n"
+"         background-color: rgb(255, 170, 0);;\n"
+"    \n"
+"}")
         self.re_but.setObjectName("re_but")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(40, 10, 481, 91))
         font = QtGui.QFont()
-        font.setFamily("Courier New")
+        font.setFamily("Corbel")
         font.setPointSize(26)
+        font.setBold(True)
+        font.setWeight(75)
         self.label.setFont(font)
+        self.label.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(10, 190, 261, 61))
+        self.label_2.setGeometry(QtCore.QRect(10, 201, 311, 31))
         font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setFamily("Consolas")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
         self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.label_2.setObjectName("label_2")
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(300, 210, 61, 21))
+        self.lineEdit.setGeometry(QtCore.QRect(330, 209, 61, 21))
+        self.lineEdit.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEdit.setObjectName("lineEdit")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(390, 195, 101, 61))
+        self.label_3.setGeometry(QtCore.QRect(210, 239, 91, 31))
         font = QtGui.QFont()
         font.setFamily("Bahnschrift Light")
         font.setPointSize(10)
         self.label_3.setFont(font)
+        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.label_3.setObjectName("label_3")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(310, 240, 56, 17))
+        self.pushButton_2.setGeometry(QtCore.QRect(410, 209, 84, 21))
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("QPushButton {\n"
+"         border: 1.5px solid #000000;\n"
+"         border-radius :8px;\n"
+"         color: #000000;\n"
+"         background-color: rgb(255, 170, 0);;\n"
+"         min-width: 80px;\n"
+"     }\n"
+"\n"
+"QPushButton:pressed {\n"
+"         background-color: rgb(255, 170, 0);;\n"
+"    \n"
+"}")
         self.pushButton_2.setObjectName("pushButton_2")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(360, 240, 111, 31))
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift Light")
+        self.label_4.setFont(font)
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -80,10 +133,10 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "RunProfit Launcher"))
         self.pushButton.setText(_translate("MainWindow", "Notepad"))
         self.re_but.setText(_translate("MainWindow", "Reminder"))
-        self.label.setText(_translate("MainWindow", "Python program"))
-        self.label_2.setText(_translate("MainWindow", "Ваша оценка от 1 до 10"))
+        self.label.setText(_translate("MainWindow", "RunProfit Launcher"))
+        self.label_2.setText(_translate("MainWindow", "Your estimate from 1 to 10"))
         self.label_3.setText(_translate("MainWindow", "by iMAGA"))
         self.pushButton_2.setText(_translate("MainWindow", "Submit"))

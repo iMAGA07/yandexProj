@@ -11,24 +11,24 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>REMINDER</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 254, 210);</string>
+   <string notr="true">background-color: #ff7142;</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>15</x>
+     <x>6</x>
      <y>90</y>
-     <width>251</width>
+     <width>321</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Yu Gothic UI Light</family>
-     <pointsize>9</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="text">
@@ -38,16 +38,16 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>7</x>
      <y>134</y>
-     <width>241</width>
+     <width>301</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Yu Gothic UI Light</family>
-     <pointsize>9</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="text">
@@ -57,46 +57,41 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>130</x>
      <y>20</y>
-     <width>121</width>
+     <width>161</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Bahnschrift Light SemiCondensed</family>
+     <family>Bahnschrift SemiBold</family>
      <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>Reminder</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>100</y>
-     <width>41</width>
-     <height>20</height>
-    </rect>
+    <string>REMINDER</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>322</x>
      <y>140</y>
-     <width>121</width>
+     <width>71</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color #ff7142;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>150</x>
      <y>190</y>
      <width>91</width>
      <height>31</height>
@@ -109,6 +104,20 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+         border: 2px solid #000000;
+         border-radius :8px;
+         color: #000000;
+         background-color: #c8c8c8;;
+         min-width: 80px;
+     }
+
+QPushButton:pressed {
+         background-color: #c8c8c8;;
+	
+}</string>
    </property>
    <property name="text">
     <string>Submit</string>
@@ -138,14 +147,66 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>250</y>
-     <width>61</width>
-     <height>17</height>
+     <x>10</x>
+     <y>10</y>
+     <width>51</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Bahnschrift SemiBold Condensed</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+         border: 2px solid #000000;
+         border-radius :8px;
+         color: #000000;
+         background-color: #c8c8c8;;
+         min-width: 20px;
+     }
+
+QPushButton:pressed {
+         background-color: #c8c8c8;;
+	
+}</string>
    </property>
    <property name="text">
     <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="tm">
+   <property name="geometry">
+    <rect>
+     <x>331</x>
+     <y>100</y>
+     <width>61</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>230</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Bahnschrift</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
