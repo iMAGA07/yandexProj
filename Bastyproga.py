@@ -18,7 +18,7 @@ gigid = []
 for we in range(1, 11):
     didgi.append(str(we))
  
-for me in range(1, 6):
+for me in range(1, 7):
     gigid.append(str(me))
 
 # Создание списка и цикла для ввода оценки от 0 до 11
@@ -39,7 +39,6 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.pushButton.clicked.connect(self.notepad_run)
         self.re_but.clicked.connect(self.reminder_run)
         self.pushButton_2.clicked.connect(self.dbrun)
-        self.rate = self.lineEdit.text()
 
 # Связывание обьектов с функциями
 
@@ -107,7 +106,6 @@ class filerecom(QWidget):
         self.pushButton.clicked.connect(self.submitting)
         self.pushButton_2.clicked.connect(self.bakk)
 
-        text = self.plainTextEdit.toPlainText()
 
 # Создание нового класса для окна рекомендации
 # Добавление основной функции
@@ -115,12 +113,19 @@ class filerecom(QWidget):
         
 
     def submitting(self):
+        text = self.plainTextEdit.toPlainText()
         con = sql.connect('dbrate.db')
         cur = con.cursor()
         query = '''INSERT INTO QQ (DE) VALUES (?)'''
-        res = cur.execute(query, (qe,))
+        res = cur.execute(query, (text,))
         con.commit()
         con.close()
+
+        notification.notify(
+            title='NOTIFICATION)',
+            message='Your recommendation was submitted',
+            app_icon='ph.ico',
+            timeout=6,)
 
 # Функция для записи рекомендации в базу данных
 

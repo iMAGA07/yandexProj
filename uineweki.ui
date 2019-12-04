@@ -206,6 +206,16 @@ QPushButton:pressed {
     <string notr="true">background-color: #ffdb6f;</string>
    </property>
   </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>270</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
