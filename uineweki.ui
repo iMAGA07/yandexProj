@@ -42,7 +42,7 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>27</x>
+     <x>60</x>
      <y>37</y>
      <width>84</width>
      <height>21</height>
@@ -75,7 +75,7 @@ QPushButton:pressed {
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>119</x>
+     <x>152</x>
      <y>37</y>
      <width>82</width>
      <height>21</height>
@@ -108,7 +108,7 @@ QPushButton:pressed {
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>207</x>
+     <x>240</x>
      <y>37</y>
      <width>82</width>
      <height>21</height>
@@ -204,39 +204,6 @@ QPushButton:pressed {
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: #ffdb6f;</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_5">
-   <property name="geometry">
-    <rect>
-     <x>296</x>
-     <y>38</y>
-     <width>84</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Bahnschrift SemiBold Condensed</family>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-         color: #ffdb6f;
-         background-color: rgb(64, 64, 64);;
-         min-width: 80px;
-     }
-
-QPushButton:pressed {
-         background-color: rgb(64, 64, 64);;
-	
-}</string>
-   </property>
-   <property name="text">
-    <string>New file</string>
    </property>
   </widget>
  </widget>
